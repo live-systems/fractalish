@@ -1,2 +1,9 @@
-# tinker-engine
-Nginx running without root
+# Fractalish
+
+Angular BDD with jasmine, karma, etc.
+
+    ./configure
+
+    make
+
+    make test
