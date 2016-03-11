@@ -1,8 +1,8 @@
 server {
     listen 80;
-    server_name tinker.local;
+    server_name fractalish.local;
 
-    root /srv/tinker/www;
+    root /srv/fractalish/www;
 
     autoindex on;
 
