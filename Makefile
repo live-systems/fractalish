@@ -1,4 +1,4 @@
-.PHONY: build test serve stop deps
+.PHONY: build test serve stop deps npm-deps
 
 DOMAIN=http://localhost:8775/
 PHANTOMPATH=`pwd`/tests/bin/phantomjs
@@ -6,7 +6,7 @@ NGINX_PATH=`readlink -f nginx-1*/objs/nginx`
 
 -include CONFIG
 
-build: deps serve
+build: deps npm-deps serve
 
 clean:
 	rm -rf nginx-1* phantomjs-2* tests/bin/phantomjs tests/output/* vendor/*
@@ -16,6 +16,11 @@ deps:
 	which python3
 	virtualenv -p `which python3` "${HOME}/.virtualenv"
 	pip3 install -U -r `pwd`/requirements.txt
+
+npm-deps:
+	npm install karma --save-dev
+	npm install jasmine jasmine-core karma-jasmine --save-dev
+
 
 test:
 	py.test tests/
