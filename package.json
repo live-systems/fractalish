@@ -2,7 +2,7 @@
   "name": "fractalish",
   "version": "1.0.0",
   "description": "Angular BDD with jasmine, karma, etc.",
-  "main": "src/app.js",
+  "main": "app/app.js",
   "directories": {
     "test": "tests"
   },
