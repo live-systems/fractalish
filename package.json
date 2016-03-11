@@ -11,7 +11,9 @@
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "karma": "^0.13.22",
-    "karma-jasmine": "^0.3.7"
+    "karma-jasmine": "^0.3.7",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-requirejs": "^0.2.5"
   },
   "scripts": {
     "test": "karma"
