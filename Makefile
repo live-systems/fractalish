@@ -18,8 +18,8 @@ deps:
 	pip3 install -U -r `pwd`/requirements.txt
 
 npm-deps:
-	npm install karma --save-dev
-	npm install jasmine jasmine-core karma-jasmine --save-dev
+	#Install from package.json
+	npm install
 
 
 test:
