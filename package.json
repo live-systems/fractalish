@@ -1,0 +1,29 @@
+{
+  "name": "fractalish",
+  "version": "1.0.0",
+  "description": "Angular BDD with jasmine, karma, etc.",
+  "main": "src/app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "karma"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tchalvak/fractalish.git"
+  },
+  "keywords": [
+    "angularjs",
+    "jasmine",
+    "karma"
+  ],
+  "author": "Roy Ronalds",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tchalvak/fractalish/issues"
+  },
+  "homepage": "https://github.com/tchalvak/fractalish#readme"
+}
