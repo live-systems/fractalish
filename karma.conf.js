@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // base path that will be used to resolve all patterns (eg. files, exclude)
-    basePath: '',
+    basePath: '/srv/fractalish/',
 
 
     // frameworks to use
@@ -16,6 +16,7 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test-main.js',
+      {pattern: 'www/js/app.js', included: false},
       {pattern: 'www/js/*.js', included: false},
       {pattern: 'www/js/lib/*.js', included: false},
       {pattern: 'tests/js/*Spec.js', included: false}
@@ -40,7 +41,7 @@ module.exports = function(config) {
 
 
     // web server port
-    port: 9876,
+    port: 9944,
 
 
     // enable / disable colors in the output (reporters and logs)

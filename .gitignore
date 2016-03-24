@@ -1,8 +1,8 @@
 #ignore developer specific GNU make configuration for this project
 CONFIG
 
-unclean
-archive
+unclean/
+archive/
 
 vendor/
 

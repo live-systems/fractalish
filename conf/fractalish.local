@@ -1,6 +1,7 @@
 server {
     listen 80;
-    server_name fractalish.local;
+    listen 8855;
+    server_name localhost fractalish.local;
 
     root /srv/fractalish/www;
 
