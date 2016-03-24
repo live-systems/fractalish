@@ -15,16 +15,12 @@ clean:
 
 deps:
 	ln -s $(SRC)node_modules/jquery/dist/jquery.min.js $(JS_PATH)lib/jquery.min.js
-	browserify www/js/app.js -o www/js/bundle.js
+	#browserify www/js/app.js -o www/js/bundle.js
 	rm -rf ${HOME}/.virtualenv
 	which python3
 	virtualenv -p `which python3` "${HOME}/.virtualenv"
 	pip3 install -U -r `pwd`/requirements.txt
-
-npm-deps:
-	#Install from package.json
 	npm install
-
 
 test: test-js
 	py.test tests/
