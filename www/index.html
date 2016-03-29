@@ -31,8 +31,8 @@
   <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <script data-main="js/" src="js/lib/require.js"></script>
-  <script data-main="app" src="js/app.js"></script>
+  <script data-main="js/app" src="js/lib/require.js"></script>
+  <!-- <script data-main="app" src="js/app.js"></script> -->
 </head>
 <body data-spy="scroll" data-target="#menu-section">
   <!--MENU SECTION START-->
@@ -69,6 +69,28 @@
   <!--HOME SECTION START-->
   <div id="home" >
     <div class="container">
+      <div class="row animate-in" data-anim-type="fade-in-up">
+        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
+          <div class='intro'>
+            <p>
+              Let's use some trashy gifs to show our class:
+              <div style='display:inline-block;background-color:rgba(220, 200, 200, 1);border-radius:0.5em;'>
+                <img src='/assets/img/beautiful.gif'>
+              </div>
+
+            </p>
+            <div class="social">
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
+              <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
+            </div>
+            <a href="#services" class=" btn button-custom btn-custom-two">See Service List </a>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 ">
           <div id="carousel-slider" data-ride="carousel" class="carousel slide  animate-in" data-anim-type="fade-in-up">
@@ -77,13 +99,11 @@
               <div class="item active">
 
                 <h3>
-                  Consectetur adipiscing elit felis dolor felis dolor vitae
+                  Unit testing <strong>Angular js</strong> with <strong>Karma & Jasmine</strong>
                 </h3>
                 <p>
-                  Lorem ipsumdolor sitamet, consect adipiscing elit
-                  Lorem ipsumdolor sitamet, consect adipiscing elit.
-                  Lorem ipsumdolor sitamet, consect adipiscing elit
-                  Lorem ipsumdolor sitamet, consect adipiscing elit.
+                  Actually running the unit tests with npm test within codeship
+
                 </p>
               </div>
               <div class="item">
@@ -104,25 +124,6 @@
           </div>
 
 
-        </div>
-      </div>
-      <div class="row animate-in" data-anim-type="fade-in-up">
-        <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2 scroll-me">
-
-
-          <p >
-            This line is fixed so you can write anything
-
-          </p>
-          <div class="social">
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-facebook "></i></a>
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-twitter"></i></a>
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-google-plus "></i></a>
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-linkedin "></i></a>
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-pinterest "></i></a>
-            <a href="#" class="btn button-custom btn-custom-one" ><i class="fa fa-github "></i></a>
-          </div>
-          <a href="#services" class=" btn button-custom btn-custom-two">See Service List </a>
         </div>
       </div>
     </div>
