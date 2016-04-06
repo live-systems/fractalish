@@ -1,7 +1,4 @@
-//var $ = require('jquery');
-
-
-define(["jquery", "jquery.alpha", "jquery.beta"], function($, a, b) {
+define(["jquery"], function($) {
     describe("Standard library inclusion", function() {
       it("should know that true equals true", function() {
         expect(true).toBe(true);

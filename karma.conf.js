@@ -19,7 +19,8 @@ module.exports = function(config) {
       {pattern: 'www/js/app.js', included: false},
       {pattern: 'www/js/*.js', included: false},
       {pattern: 'www/js/lib/*.js', included: false},
-      {pattern: 'tests/js/*Spec.js', included: false}
+      {pattern: 'tests/js/*Spec.js', included: false},
+      'www/js/lib/jquery.min.js'
     ],
 
 
