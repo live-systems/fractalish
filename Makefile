@@ -11,7 +11,7 @@ JS_PATH:=`pwd`/www/js/
 build: deps npm-deps
 
 clean:
-	rm -rf nginx-1* phantomjs-2* tests/bin/phantomjs tests/output/* vendor/*
+	rm -rf phantomjs-2* tests/bin/phantomjs tests/output/* vendor/*
 
 deps:
 	ln -sf $(SRC)node_modules/jquery/dist/jquery.min.js $(JS_PATH)lib/jquery.min.js
