@@ -2,19 +2,19 @@
 
 DOMAIN=http://localhost:8775/
 PHANTOMPATH=`pwd`/tests/bin/phantomjs
-NGINX_PATH=`readlink -f nginx-1*/objs/nginx`
+NGINX_PATH:=`readlink -f nginx-1*/objs/nginx`
 SRC:=`pwd`/
 JS_PATH:=`pwd`/www/js/
 
 -include CONFIG
 
-build: deps npm-deps serve
+build: deps npm-deps
 
 clean:
 	rm -rf nginx-1* phantomjs-2* tests/bin/phantomjs tests/output/* vendor/*
 
 deps:
-	ln -s $(SRC)node_modules/jquery/dist/jquery.min.js $(JS_PATH)lib/jquery.min.js
+	ln -sf $(SRC)node_modules/jquery/dist/jquery.min.js $(JS_PATH)lib/jquery.min.js
 	#browserify www/js/app.js -o www/js/bundle.js
 	rm -rf ${HOME}/.virtualenv
 	which python3
